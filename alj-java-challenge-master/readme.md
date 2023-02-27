@@ -1,8 +1,9 @@
 ### Comments
+- upgrade the spring-boot-starter-parent version to 2.3.0
 - add log function in Controller class
 - add GlobleErrorHandler class
 - add toString anotation in Entity class
-- add new api with search by page 
+- add new api with search by page condition
 - add security config to protect xss attack
 - add junit test class
 - import apache common util
