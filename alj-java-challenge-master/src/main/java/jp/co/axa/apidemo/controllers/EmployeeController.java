@@ -31,24 +31,24 @@ public class EmployeeController {
         return employees;
     }
 
-    @GetMapping("/employees/{employeeId}")
+    @GetMapping("/employee/{employeeId}")
     public Employee getEmployee(@PathVariable(name="employeeId")Long employeeId) {
         return employeeService.getEmployee(employeeId);
     }
 
-    @PostMapping("/employees")
+    @PostMapping("/employee")
     public void saveEmployee(Employee employee){
     	logger.info("saveEmployee:"+employee.toString());
         employeeService.saveEmployee(employee);
     }
 
-    @DeleteMapping("/employees/{employeeId}")
+    @DeleteMapping("/employee/{employeeId}")
     public void deleteEmployee(@PathVariable(name="employeeId")Long employeeId){
         employeeService.deleteEmployee(employeeId);
         logger.info("deleteEmployee:{} Successfully",employeeId);
     }
 
-    @PutMapping("/employees/{employeeId}")
+    @PutMapping("/employee/{employeeId}")
     public void updateEmployee(@RequestBody Employee employee,
                                @PathVariable(name="employeeId")Long employeeId){
     	logger.info("updateEmployee:"+employee.toString());

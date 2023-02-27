@@ -2,6 +2,9 @@ package jp.co.axa.apidemo.services;
 
 import jp.co.axa.apidemo.entities.Employee;
 import jp.co.axa.apidemo.repositories.EmployeeRepository;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
@@ -11,6 +14,7 @@ import java.util.Optional;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService{
+    private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Autowired
     private EmployeeRepository employeeRepository;
