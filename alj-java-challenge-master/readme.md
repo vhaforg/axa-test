@@ -5,6 +5,7 @@
 - add new api with search by page 
 - add security config to protect xss attack
 - add junit test class
+- import apache common util
 - if have more time i will add the login function and redis cache function
 
 ### Instructions
