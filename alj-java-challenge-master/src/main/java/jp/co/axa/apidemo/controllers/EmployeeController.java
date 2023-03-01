@@ -19,11 +19,12 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
-    @GetMapping("/employees")
-    public List<Employee> getEmployees() {
-        List<Employee> employees = employeeService.retrieveEmployees();
-        return employees;
-    }
+    // @GetMapping("/employees")
+    // this api has risk if there are millions of data in db
+    // public List<Employee> getEmployees() {
+    //     List<Employee> employees = employeeService.retrieveEmployees();
+    //     return employees;
+    // }
     
     @GetMapping("/employees/{page}/{pageSize}")
     public List<Employee> getEmployeesByPage(@PathVariable(name="page")Integer page,@PathVariable(name="pageSize")Integer pageSize) {
@@ -54,6 +55,7 @@ public class EmployeeController {
     	logger.info("updateEmployee:"+employee.toString());
         Employee emp = employeeService.getEmployee(employeeId);
         if(emp != null){
+            employee.setId(employeeId);
             employeeService.updateEmployee(employee);
         }
 
