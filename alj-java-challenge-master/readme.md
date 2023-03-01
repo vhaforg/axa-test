@@ -9,7 +9,7 @@
 - add spring security config to protect xss attack
 - add junit test class
 - import apache common util for speed up programming
-- if have more time i will add the login function and redis cache function
+- if have more time i will add redis cache function and add some login business then store the userinfo in cache.
 
 #### Restrictions
 - use java 8
