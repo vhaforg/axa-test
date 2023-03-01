@@ -1,12 +1,13 @@
 ### Comments
 - upgrade the spring-boot-starter-parent version to 2.3.0
-- add log function in Controller class
+- add log function and configuration
 - add GlobleErrorHandler class
-- add toString anotation in Entity class
+- add toString anotation in Entity class for loging content readable
 - add new api with search by page condition
-- add security config to protect xss attack
+- add spring security config to protect xss attack
 - add junit test class
-- import apache common util
+- remove get all employees api which will have OOM risk if have millions of data in future
+- import apache common util for speed up programming
 - if have more time i will add the login function and redis cache function
 
 ### Instructions
