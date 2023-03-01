@@ -19,8 +19,8 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
-    // @GetMapping("/employees")
     // this api has risk if there are millions of data in db
+    // @GetMapping("/employees")
     // public List<Employee> getEmployees() {
     //     List<Employee> employees = employeeService.retrieveEmployees();
     //     return employees;
