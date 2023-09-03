@@ -12,7 +12,7 @@
 - if have more time i will add redis cache function and add some login business then store the userinfo in cache.
 
 #### Restrictions
-- use java 17
+- use java 178
 
 #### Your experience in Java
 - I know Spring Boot very well and have been using it for many years
